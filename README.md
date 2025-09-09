@@ -22,4 +22,4 @@
 Интерфейс получился минималистичным и интуитивным. В будущем стоит подумать над наполнением.
 
 ### Ссылка на прототип
-https://www.figma.com/proto/nMdOXemiidUV9Z3GDnxNnE/Prototype_App_Klyuchnikov?node-id=7-95&p=f&t=e5d9rK4FmTeD8RQH-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A6
+https://www.figma.com/proto/nMdOXemiidUV9Z3GDnxNnE/Prototype_App_Klyuchnikov?node-id=3-6&p=f&t=e5d9rK4FmTeD8RQH-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A6
