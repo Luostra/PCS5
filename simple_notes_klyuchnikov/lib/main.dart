@@ -60,7 +60,11 @@ class _NotesPageState extends State<NotesPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Simple Notes')),
+      appBar: AppBar(
+        title: const Text('Simple Notes'),
+        backgroundColor: const Color.fromARGB(255, 65, 105, 214),
+        foregroundColor: Colors.white,
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: _addNote,
         child: const Icon(Icons.add),
@@ -71,20 +75,28 @@ class _NotesPageState extends State<NotesPage> {
               itemCount: _notes.length,
               itemBuilder: (context, i) {
                 final note = _notes[i];
-                return ListTile(
+                return Dismissible(
                   key: ValueKey(note.id),
-                  title: Text(
-                    note.title.isEmpty ? '(без названия)' : note.title,
-                  ),
-                  subtitle: Text(
-                    note.body,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                  onTap: () => _edit(note),
-                  trailing: IconButton(
-                    icon: const Icon(Icons.delete_outline),
-                    onPressed: () => _delete(note),
+                  onDismissed: (DismissDirection direction) {
+                    setState(() {
+                      _delete(note);
+                    });
+                  },
+                  child: ListTile(
+                    key: ValueKey(note.id),
+                    title: Text(
+                      note.title.isEmpty ? '(без названия)' : note.title,
+                    ),
+                    subtitle: Text(
+                      note.body,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    onTap: () => _edit(note),
+                    trailing: IconButton(
+                      icon: const Icon(Icons.delete_outline),
+                      onPressed: () => _delete(note),
+                    ),
                   ),
                 );
               },
