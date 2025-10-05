@@ -173,7 +173,8 @@ class _NotesPageState extends State<NotesPage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _addNote,
-        child: const Icon(Icons.add),
+        backgroundColor: Color.fromARGB(255, 65, 105, 214),
+        child: const Icon(Icons.add, color: Colors.white),
       ),
       body: Column(
         children: [
@@ -237,6 +238,13 @@ class _NotesPageState extends State<NotesPage> {
                     itemBuilder: (context, i) {
                       final note = _filteredNotes[i];
                       return Dismissible(
+                        background: Container(
+                          color: Colors.red,
+                          child: Icon(
+                            Icons.delete_outline,
+                            color: Colors.white,
+                          ),
+                        ),
                         key: ValueKey(note.id),
                         onDismissed: (DismissDirection direction) {
                           _delete(note);
