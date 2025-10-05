@@ -10,7 +10,12 @@ class SimpleNotesApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Simple Notes',
-      theme: ThemeData(useMaterial3: true),
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.light(
+          primary: Color.fromARGB(255, 65, 105, 214),
+        ),
+      ),
       home: const NotesPage(),
     );
   }
@@ -25,6 +30,13 @@ class NotesPage extends StatefulWidget {
 class _NotesPageState extends State<NotesPage> {
   final List<Note> _notes = [
     Note(id: '1', title: 'Пример', body: 'Это пример заметки'),
+    Note(id: '2', title: 'Второй пример', body: 'Это пример заметки'),
+    Note(id: '3', title: 'Третий пример', body: 'Это пример заметки'),
+    Note(id: '4', title: 'Четвёртый пример', body: 'Это пример заметки'),
+    Note(id: '5', title: 'Пятый пример', body: 'Это очередной пример заметки'),
+    Note(id: '6', title: 'Шестой пример', body: 'Это пример заметки'),
+    Note(id: '7', title: 'Седьмой пример', body: 'Это ещё один пример заметки'),
+    Note(id: '8', title: 'Восьмой пример', body: 'Это пример заметки'),
   ];
 
   List<Note> _filteredNotes = [];
