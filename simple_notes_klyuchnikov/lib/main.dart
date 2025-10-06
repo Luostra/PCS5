@@ -16,6 +16,7 @@ class SimpleNotesApp extends StatelessWidget {
           primary: Color.fromARGB(255, 65, 105, 214),
         ),
       ),
+      debugShowCheckedModeBanner: false,
       home: const NotesPage(),
     );
   }
