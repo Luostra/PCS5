@@ -8,13 +8,13 @@
 
 2.	Скриншот экрана входа и экрана со списком (пустого и с данными).
 
-экран входа:
+ - экран входа:
 <img width="1080" height="1424" alt="Снимок экрана 2025-11-06 172037" src="https://github.com/user-attachments/assets/465dd6ad-e2cd-4c9b-87b8-ad48a9e3b07a" />
 
-экран со списком (пустым):
+ - экран со списком (пустым):
 <img width="1108" height="1408" alt="Снимок экрана 2025-11-06 171659" src="https://github.com/user-attachments/assets/0edd2bcf-e017-44ed-a0ea-fbbdb134f606" />
 
-экран со списком (с данными):
+ - экран со списком (с данными):
 <img width="1114" height="1417" alt="Снимок экрана 2025-11-06 172136" src="https://github.com/user-attachments/assets/a2c2eb7e-a00d-4db9-be3a-2bcd6353ba73" />
 
 3.	Скриншот после добавления заметки (элемент появился).
@@ -22,25 +22,25 @@
 
 4.	Скриншоты после удаления и после редактирования.
 
-после удаления:
+ - после удаления:
 <img width="1132" height="1440" alt="Снимок экрана 2025-11-06 172726" src="https://github.com/user-attachments/assets/2f035262-1edc-42f0-95fc-513fbeeb5cec" />
 
-после редактирования:
+ - после редактирования:
 <img width="1230" height="1434" alt="Снимок экрана 2025-11-06 172823" src="https://github.com/user-attachments/assets/b7218134-35a5-4990-aad3-475f6700ca18" />
 
 **1. Подключение Supabase:**
-- Создан проект на [supabase.com](https://supabase.com), получены **Project URL** и **anon (public) key** из настроек проекта в Dashboard.
-- В проекте создана таблица `notes` с включённым RLS (Row Level Security).
+- создан проект на [supabase.com](https://supabase.com), получены **Project URL** и **anon (public) key** из настроек проекта в Dashboard;
+- в проекте создана таблица `notes` с включённым RLS (Row Level Security).
 
 ---
 
 **2. Зависимости и инициализация:**
-- В `pubspec.yaml` добавлен пакет:  
+В `pubspec.yaml` добавлен пакет:  
   ```yaml
   dependencies:
     supabase_flutter: ^2.10.3
   ```
-- Инициализация выполнена в `main.dart`:  
+Инициализация выполнена в `main.dart`:  
   ```dart
   const supabaseUrl = 'https://ehiqncbnfmsilvrprzfc.supabase.co';
   const supabaseAnonKey =
@@ -56,8 +56,7 @@
 
 ---
 
-**3. Структура таблицы `notes`:**
-- Поля:  
+**3. Поля таблицы `notes`:**
   - `id` (uuid, первичный ключ)  
   - `user_id` (uuid, не nullable)  
   - `title` (text)  
@@ -67,12 +66,12 @@
 
 ---
 
-**4. RLS-политики для таблицы `notes`:**
-- Включён RLS на таблице.  
-- Созданы политики для операций:  
-  - **SELECT**: только свои записи (`user_id = auth.uid()`).  
-  - **INSERT**: только с своим `user_id`.  
-  - **UPDATE**: только свои записи.  
+**4. Политики безопасности (RLS) для таблицы `notes`:**
+- включён RLS на таблице;  
+- созданы политики для операций:  
+  - **SELECT**: только свои записи (`user_id = auth.uid()`);  
+  - **INSERT**: только с своим `user_id`;  
+  - **UPDATE**: только свои записи;  
   - **DELETE**: только свои записи.  
 
 Пример политики для SELECT:  
