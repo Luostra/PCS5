@@ -33,7 +33,7 @@ abstract class NoteRepository {
 - Расположение: файл базы данных notes.db хранится во внутреннем каталоге приложения (в песочнице Android):
 
 ```
-/data/data/com.example.notes_sqlite_app_klyuchnikov/databases/notes.db
+/data/data/com.example.notes_sqlite_app_klyuchnikov/databases/app.db
 ```
 
 - Доступ: защищен песочницей ОС, другие приложения не имеют доступа.
@@ -156,16 +156,31 @@ static Future<int> deleteNote(int id) async {
 ### Результаты:
 
 - Скриншот приложения с пустым списком (первый запуск)
+<img width="350" alt="Снимок экрана 2025-11-12 193520" src="https://github.com/user-attachments/assets/38d37ae5-c179-4662-8233-dba3a65fb368" />
 
 - Скриншот после добавления заметки
+<img width="350" alt="Снимок экрана 2025-11-12 193730" src="https://github.com/user-attachments/assets/324dc2e4-5e67-47db-a972-ad229bae944e" />
 
 - Скриншот окна редактирования и итоговой записи
+1. окно редактирования:
 
-- Скриншот после удаления (запись исчезла)
+<img width="350" alt="Снимок экрана 2025-11-12 193839" src="https://github.com/user-attachments/assets/94297ede-ef15-4e06-b41d-44b858c9f8b9" />
+
+2. итоговая запись:
+
+<img width="350" alt="Снимок экрана 2025-11-12 193903" src="https://github.com/user-attachments/assets/97cbb932-b75d-44bd-95b9-5eb207d74904" />
+
+- Удаление записи (GIF)
+  
+![delete](https://github.com/user-attachments/assets/b0bc6e9c-999d-474d-838c-167bc51f7b16)
 
 - Работа поисковой строки (GIF)
+  
+![search](https://github.com/user-attachments/assets/e5a09ac7-1b0a-4595-9c55-5fcda085aee1)
 
 - Скриншот тестирования
+  
+<img width="400" alt="Снимок экрана 2025-11-12 200322" src="https://github.com/user-attachments/assets/53611055-0be9-42aa-8967-bae4e1643c1d" />
 
 ### Вывод:
 
