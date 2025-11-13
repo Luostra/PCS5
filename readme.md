@@ -172,11 +172,12 @@ static Future<int> deleteNote(int id) async {
 
 - Удаление записи (GIF)
   
-![delete](https://github.com/user-attachments/assets/b0bc6e9c-999d-474d-838c-167bc51f7b16)
+![delete-3](https://github.com/user-attachments/assets/c18cb28d-5b03-4c47-a518-668cbb6c39df)
 
 - Работа поисковой строки (GIF)
   
-![search](https://github.com/user-attachments/assets/e5a09ac7-1b0a-4595-9c55-5fcda085aee1)
+
+![search (1)](https://github.com/user-attachments/assets/14865893-f9ee-481f-9803-07f5813d4771)
 
 - Скриншот тестирования
   
