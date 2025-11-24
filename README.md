@@ -14,6 +14,12 @@
 
 **Вариант B** - Mock API на Express.js с полным CRUD функционалом
 
+<img width="1992" height="599" alt="image" src="https://github.com/user-attachments/assets/2c49ba94-0227-4f4b-98fa-3d38a548eefb" />
+
+<img width="2177" height="540" alt="image" src="https://github.com/user-attachments/assets/33ad2b9b-479d-4eb7-8339-659827123506" />
+
+
+
 **Базовый URL**: `http://10.0.2.2:3000` (для Android эмулятора)
 
 **Эндпоинты**:
