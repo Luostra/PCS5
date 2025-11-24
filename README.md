@@ -12,7 +12,7 @@
 
 ### Используемый API и эндпоинты
 
-**Вариант B** - Mock API на Express.js с полным CRUD функционалом
+**Вариант B** - API на Express.js с полным CRUD функционалом
 
 <img width="1992" height="599" alt="image" src="https://github.com/user-attachments/assets/2c49ba94-0227-4f4b-98fa-3d38a548eefb" />
 
