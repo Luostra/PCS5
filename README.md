@@ -158,13 +158,13 @@ final Map<String, img.Image Function(img.Image)> _filters = {
 
 ![GalleryPhoto](https://github.com/user-attachments/assets/1d8d9985-8e6f-48d7-9ca0-6b62d0ea3339)
 
-4. Создание видео, воспроизведение и сохранение:
+4. Запись видео, воспроизведение и сохранение:
 
-![CreateVideo](./video/CreateVideo.mp4)
+![CreateVideo](https://github.com/user-attachments/assets/d898e1ff-71b0-4516-87cb-9af7a25ed6be)
 
 5. Выбор видео из галереи, воспроизведение и сохранение:
 
-![GalleryVideo](./video/GalleryVideo.mp4)
+![GalleryVideo](https://github.com/user-attachments/assets/97c4a6f1-315c-4b8b-bc2f-ed2408af8329)
 
 #### Вывод:
 
