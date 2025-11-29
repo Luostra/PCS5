@@ -45,7 +45,7 @@ class _CameraPageState extends State<CameraPage> {
     'Оригинал': (image) => image,
     'Черно-белый': (image) => img.grayscale(image),
     'Сепия': (image) => img.sepia(image),
-    'Инверсия': (image) => img.invert(image),
+    'Негатив': (image) => img.invert(image),
     'Размытие': (image) => img.gaussianBlur(image, radius: 10),
     'Яркость+': (image) => img.adjustColor(image, brightness: 1.5),
     'Яркость-': (image) => img.adjustColor(image, brightness: 0.7),
