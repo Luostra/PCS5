@@ -128,7 +128,7 @@ if (magnitude > accelThreshold) {
 
 <img width="350" alt="image" src="https://github.com/user-attachments/assets/7dfdf7c0-37e8-4250-a1ae-bbf470925828" />
 
-3. Скриншот главного экрана (уведомление о резком усокрении)
+3. Скриншот главного экрана (уведомление о резком ускорении)
 
 <img width="350" alt="image" src="https://github.com/user-attachments/assets/a7f1e05b-9d9b-4ae0-8277-d3329e328dff" />
 
