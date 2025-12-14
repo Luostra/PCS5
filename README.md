@@ -110,7 +110,7 @@ LineChartBarData(
 
 ```dart
 if (magnitude > accelThreshold) {
-  _showAlert('Резкое ускорение!');
+  _showAlert('⚠ Резкое ускорение!');
 }
 ```
 
