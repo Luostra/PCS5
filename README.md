@@ -45,7 +45,7 @@ Supabase (Postgres) + Supabase Auth + Supabase Storage + RLS
 
 ---
 
-### 3. **Скриншоты**
+## 3. **Скриншоты**
 
 карточки приложения
 
