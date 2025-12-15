@@ -3,7 +3,7 @@
 ## Подготовил Ключников А.Д., ЭФБО-09-23
 
 ---
-Ссылка на репозиторий приложения: https://github.com/Luostra/recipes-app
+Ссылка на [репозиторий](https://github.com/Luostra/recipes-app) приложения
 
 ---
 
